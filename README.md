@@ -40,10 +40,7 @@ Couturize - это инновационное приложение для мод
 - `CouturizeFrontQuasar/` - Фронтенд приложения на Quasar Framework
 - `CouturizeBackDjango/` - Бэкенд приложения на Django
 
-### Установка и запуск
-Подробные инструкции по установке и запуску можно найти в README.md соответствующих директорий:
-- [Фронтенд (Quasar)](./CouturizeFrontQuasar/README.md)
-- [Бэкенд (Django)](./CouturizeBackDjango/README.md)
+
 
 ## Ссылка на техническое задание
 
