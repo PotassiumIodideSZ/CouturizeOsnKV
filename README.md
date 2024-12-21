@@ -44,18 +44,4 @@ Couturize - это инновационное приложение для мод
 
 ## Ссылка на техническое задание
 https://github.com/PotassiumIodideSZ/CouturizeOsnKV/pull/14
-----------
 
-## 🇬🇧 English
-Couturize is an innovative fashion application that combines technology and style. Our app helps users create, share, and discover new fashion looks.
-
-### Project Structure
-- `CouturizeFrontQuasar/` - Frontend application built with Quasar Framework
-- `CouturizeBackDjango/` - Backend application built with Django
-
-### Installation and Running
-Detailed instructions for installation and running can be found in the README.md files in the respective directories:
-- [Frontend (Quasar)](./CouturizeFrontQuasar/README.md)
-- [Backend (Django)](./CouturizeBackDjango/README.md)
-
-### Installation and Running
