@@ -43,5 +43,5 @@ Couturize - это инновационное приложение для мод
 
 
 ## Ссылка на техническое задание
-https://github.com/PotassiumIodideSZ/CouturizeOsnKV/pull/14
+[Техническое задание](Техзадание.md)
 
