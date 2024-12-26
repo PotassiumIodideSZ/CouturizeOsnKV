@@ -1,0 +1,267 @@
+/* Reset & Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Builder Extended Font Family */
+@font-face {
+  font-family: 'Builder Extended';
+  src: url('../assets/fonts/BuilderExtended-Light-300_0.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Builder Extended';
+  src: url('../assets/fonts/BuilderExtended-Regular-400_0.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Builder Extended';
+  src: url('../assets/fonts/BuilderExtended-SemiBold-600_0.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Builder Extended';
+  src: url('../assets/fonts/BuilderExtended-Bold-700_0.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Builder Extended';
+  src: url('../assets/fonts/BuilderExtended-ExtraBold-800_0.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base variables */
+:root {
+  --font-family: 'Raleway', sans-serif;
+  --font-family-price: 'Inter', sans-serif;
+  --font-family-logo: 'Builder Extended', sans-serif;
+  --transition-duration: 0.3s;
+  --color-primary: #{$primary};
+  --color-primary-bg: #{$primary-bg};
+  --color-secondary: #{$secondary};
+  --color-accent: #{$accent};
+  --color-dark: #{$dark};
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  
+  /* Typography */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  
+  /* Transitions */
+  --transition-fast: 150ms;
+  --transition-normal: 300ms;
+  --transition-slow: 500ms;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Light theme (default) */
+:root {
+  --text-color: #{$primary-bg};
+  --bg-color: #ffffff;
+  --highlight-color: #{$primary};
+  --drawer-bg: #f0f0f0;  /* Light theme drawer background */
+}
+
+/* Dark theme */
+.body--dark {
+  --text-color: #ffffff;
+  --bg-color: #{$primary-bg};
+  --highlight-color: #{$primary};
+  --drawer-bg: #{$primary-bg};  /* Darker drawer background for dark theme */
+
+  background: var(--bg-color);
+
+  .q-page-container {
+    background: var(--bg-color);
+  }
+}
+
+/* Global styles */
+* {
+  font-family: var(--font-family);
+  transition: color var(--transition-duration) ease,
+              background-color var(--transition-duration) ease;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.main-bg-color {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.highlight {
+  color: var(--highlight-color);
+  font-weight: bold;
+}
+
+.section {
+  width: 100%;
+}
+
+.main-page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header styles */
+.q-header {
+  background: var(--bg-color) !important;
+}
+
+.q-toolbar {
+  color: var(--text-color);
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+/* Grid Utilities */
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  place-items: center;
+}
+
+/* Spacing Utilities */
+.m-0 { margin: 0; }
+.m-1 { margin: var(--space-xs); }
+.m-2 { margin: var(--space-sm); }
+.m-3 { margin: var(--space-md); }
+.m-4 { margin: var(--space-lg); }
+.m-5 { margin: var(--space-xl); }
+
+.p-0 { padding: 0; }
+.p-1 { padding: var(--space-xs); }
+.p-2 { padding: var(--space-sm); }
+.p-3 { padding: var(--space-md); }
+.p-4 { padding: var(--space-lg); }
+.p-5 { padding: var(--space-xl); }
+
+/* Typography Utilities */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+
+.font-bold { font-weight: 700; }
+.font-medium { font-weight: 500; }
+.font-normal { font-weight: 400; }
+
+/* Responsive Utilities */
+.hide-sm {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.hide-md {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.hide-lg {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+/* Animation Utilities */
+.transition {
+  transition: all var(--transition-normal) ease;
+}
+
+.hover-scale {
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.hover-opacity {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/* Shadow Utilities */
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
