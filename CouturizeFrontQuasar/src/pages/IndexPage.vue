@@ -43,7 +43,7 @@
         </div>
         <div class="flex-section">
           <p class="flex-section-text"><span class="highlight">СОХРАНЕНИЕ</span> ПОНРАВИВШИХСЯ КОМБИНАЦИЙ</p>
-          <div class="flex-section-img"><img id="flex-section-img-3" src="../assets/vector.png" alt="Image 3" /></div>
+          <div class="flex-section-img"><img id="flex-section-img-3" src="../assets/Vector.png" alt="Image 3" /></div>
         </div>
       </div>
     </div>
