@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpR fFf" class="main-bg-color">
-    <HeaderMain @toggle-right-drawer="toggleRightDrawer" />
+    <!-- <HeaderMain @toggle-right-drawer="toggleRightDrawer" /> -->
 
     <q-drawer
       v-model="rightDrawerOpen"
@@ -41,7 +41,7 @@ import { ref, computed, provide } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import EssentialLink from 'components/EssentialLink.vue'
 import FooterMain from 'components/FooterMain.vue'
-import HeaderMain from 'components/HeaderMain.vue'
+// import HeaderMain from 'components/HeaderMain.vue'
 import StyleRecommendationModal from 'components/StyleRecommendationModal.vue'
 
 defineOptions({
