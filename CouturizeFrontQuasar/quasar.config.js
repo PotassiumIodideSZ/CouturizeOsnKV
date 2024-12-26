@@ -8,9 +8,10 @@
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js
 
-import { configure } from 'quasar/wrappers';
+const { configure } = require('quasar/wrappers');
 
-export default configure(function (/* ctx */) {
+
+module.exports = configure(function (/* ctx */) {
   return {
     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
     // preFetch: true,
@@ -19,8 +20,8 @@ export default configure(function (/* ctx */) {
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
     boot: [
-      
-      
+
+
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
