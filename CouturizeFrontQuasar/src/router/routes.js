@@ -5,10 +5,13 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/IndexPage.vue') },
       // { path: 'main', component: () => import('pages/MainPage.vue') },
+      add_registration
       { path: 'login', component: () => import('pages/LoginPage.vue') },
       { path: 'register', component: () => import('pages/RegisterPage.vue') },
-      // { path: 'style', component: () => import('pages/StylePage.vue') },
-      // { path: '/profile', name: 'Profile', component: () => import('pages/ProfilePage.vue') },
+      add-page-styles
+      { path: 'style', component: () => import('pages/StylePage.vue') },
+      { path: '/profile', name: 'Profile', component: () => import('pages/ProfilePage.vue') },
+      main
     ]
   },
 
