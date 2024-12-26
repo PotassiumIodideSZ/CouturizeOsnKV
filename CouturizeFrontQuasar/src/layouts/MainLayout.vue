@@ -28,7 +28,7 @@
     <q-page-container>
       <router-view />
     </q-page-container>
-    <!-- <FooterMain /> -->
+    <FooterMain />
     <StyleRecommendationModal
       v-model="showStyleModal"
       @submit="handleStyleSubmit"
@@ -40,7 +40,7 @@
 import { ref, computed, provide } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import EssentialLink from 'components/EssentialLink.vue'
-// import FooterMain from 'components/FooterMain.vue'
+import FooterMain from 'components/FooterMain.vue'
 // import HeaderMain from 'components/HeaderMain.vue'
 import StyleRecommendationModal from 'components/StyleRecommendationModal.vue'
 
